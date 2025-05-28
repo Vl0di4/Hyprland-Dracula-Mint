@@ -6,6 +6,7 @@ sudo pacman -S wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-porta
 
 ```
 yay -S visual-studio-code-bin
+yay -S bibata-cursor-theme-bin
 ```
 
 ```
