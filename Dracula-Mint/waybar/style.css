@@ -37,8 +37,20 @@ button {
     min-height: 0;
 }
 
+#workspaces button.empty {
+    color: #878887;
+}
+
+#workspaces button.active {
+    color: #C5C8C6;
+}
+
+/* #workspaces button:not(.occupied) {
+    color: #878887;
+} */
+
 #workspaces button:hover {
-    color: #ffffff;
+    color: #e6e9e7;
 }
 
 #mode {
