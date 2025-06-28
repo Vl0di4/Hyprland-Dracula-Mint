@@ -41,8 +41,6 @@ cd ~/yay
 makepkg -si
 yay -S bibata-cursor-theme-bin
 
-## Посте этого в настройках ДС будет доступна тема
-
 # Настраиваем права на выполнение
 chmod +x ~/.config/rofi/network-manager.sh
 chmod +x ~/.config/rofi/rofi-power-menu.sh
