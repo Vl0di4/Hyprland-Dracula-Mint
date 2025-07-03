@@ -18,6 +18,7 @@
         "memory"
     ],
     "modules-right": [
+        "keyboard-state",
         "pulseaudio",
         "hyprland/language",
         "custom/calc",
@@ -96,14 +97,10 @@
     },
 
     "keyboard-state": {
-        "numlock": true,
         "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
+        "format": "{name}"
     },
+
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
