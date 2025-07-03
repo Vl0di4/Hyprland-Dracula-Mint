@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Устанавливаем все программы
-sudo pacman -S wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty neovim firefox pavucontrol nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome xarchiver hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fuse2 wl-clipboard mc udiskie vlc unzip flatpak --noconfirm
+sudo pacman -S wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty neovim firefox pavucontrol nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako dunst ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome xarchiver hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fuse2 wl-clipboard mc udiskie vlc unzip flatpak --noconfirm
 
 #Создание папки .config и .themes
 mkdir -p ~/.config
@@ -19,6 +19,7 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/gtk-4.0 ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/swappy ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/neofetch ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/mako ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/dunst ~/.config/
 
 # переносим настройки курсора
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
@@ -46,3 +47,4 @@ chmod +x ~/.config/rofi/network-manager.sh
 chmod +x ~/.config/rofi/rofi-power-menu.sh
 chmod +x ~/.config/hypr/show_layout_popup.sh
 chmod +x ~/.config/hypr/hyprpicker.sh
+chmod +x ~/.config/dunst/dunstrc
