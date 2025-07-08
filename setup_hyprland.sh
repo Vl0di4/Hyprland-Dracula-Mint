@@ -42,6 +42,7 @@ git clone https://aur.archlinux.org/yay.git ~/yay
 cd ~/yay
 makepkg -si
 yay -S bibata-cursor-theme-bin
+yay -S vscodium-bin
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/rofi/network-manager.sh
