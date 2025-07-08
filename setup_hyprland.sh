@@ -21,6 +21,7 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/neofetch ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/mako ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/dunst ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/fastfetch ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/VSCodium ~/.config/
 
 # переносим настройки курсора
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
