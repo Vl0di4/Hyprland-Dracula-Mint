@@ -1,0 +1,12 @@
+{
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'bold', bold",
+    "editor.fontSize": 16,
+
+    "breadcrumbs.enabled": false,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 4,
+    "editor.multiCursorModifier": "alt",
+    "editor.cursorBlinking": "solid",
+
+    "workbench.startupEditor": "none",
+}
