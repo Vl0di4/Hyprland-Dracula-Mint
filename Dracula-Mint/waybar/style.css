@@ -3,12 +3,12 @@
     font-family: JetBrainsMono Nerd Font;
     font-size: 13px;
     border-radius: 10px;
+    min-height: 0px;
 }
 
 window#waybar {
     background-color: #23252e;
     color: #C5C8C6;
-    /* margin: 10px 0px 0px 0px; */
 }
 
 window#waybar.termite {
@@ -31,10 +31,12 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
 #workspaces button {
-    padding: 0 3px;
-    background-color: transparent;
-    color: #C5C8C6;
-    min-height: 0;
+    /* background-color: #ff0000; */
+	color: #c5c8c6;
+	padding: 0 4px;
+	margin: 1px 2px 0 2px;
+	/* border-bottom: solid 2px #00ff00; */
+	border-radius: 0;
 }
 
 #workspaces button.empty {
@@ -42,7 +44,9 @@ button {
 }
 
 #workspaces button.active {
-    color: #C5C8C6;
+    color: #c5c8c6;
+    background-color: #2b2d36;
+	border-bottom: solid 2px #25a487;
 }
 
 /* #workspaces button:not(.occupied) {
@@ -50,7 +54,8 @@ button {
 } */
 
 #workspaces button:hover {
-    color: #e6e9e7;
+    background-color: #2b2d36;
+	border-bottom: solid 2px #c5c8c6;
 }
 
 #mode {
@@ -80,7 +85,12 @@ button {
 }
 
 #workspaces {
-    margin: 0 0px;
+    background-color: #2b2d36;
+	margin: 4px 0px 4px 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 6px;
+
 }
 
 #window {
@@ -271,7 +281,7 @@ label:focus {
     background: #97e1ad;
     color: #000000;
     padding: 0 5px;
-    margin: 0 5px;
+    margin: 4px 5px;
 }
 
 #scratchpad {
