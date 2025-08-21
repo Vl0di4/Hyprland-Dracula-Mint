@@ -153,7 +153,7 @@
         "tooltip": false,
         "interval": 1,
         "format": "{:%H:%M:%S}",
-        "format-alt": "{:%d-%m-%Y %H:%M:%S}",
+        // "format-alt": "{:%d-%m-%Y %H:%M:%S}",
         "on-click": "bash -c 'pgrep -x gsimplecal >/dev/null && pkill -x gsimplecal || gsimplecal &'"
     },
     "cpu": {
