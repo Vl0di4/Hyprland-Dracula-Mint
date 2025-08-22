@@ -149,7 +149,8 @@
         "interval": 1,
         "format": "{:%H:%M:%S}",
         // "format-alt": "{:%d-%m-%Y %H:%M:%S}",
-        "on-click": "bash -c 'pgrep -x gsimplecal >/dev/null && pkill -x gsimplecal || gsimplecal &'"
+        // "on-click": "bash -c 'pgrep -x gsimplecal >/dev/null && pkill -x gsimplecal || gsimplecal &'"
+        "on-click": "gsimplecal"
     },
     "cpu": {
         "format": "<span color='#25A487'></span> {usage}%",
