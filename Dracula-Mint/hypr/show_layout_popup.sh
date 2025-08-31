@@ -1,8 +1,8 @@
 #!/bin/bash
-sleep 0.1
+#sleep 0.1
 
 # Закрыть все уведомления (только если у тебя dunst)
-dunstctl close-all
+# dunstctl close-all
 
 layouts=$(hyprctl devices | grep "active keymap" | awk -F': ' '{print $2}')
 layout=$(echo "$layouts" | grep -v "English (US)" | head -n 1)
@@ -13,10 +13,10 @@ fi
 
 case "$layout" in
     *Ukrainian*)
-        code="UA"
+        code="УКР"
         ;;
     *Russian*)
-        code="RU"
+        code="РУС"
         ;;
     *English*)
         code="ENG"
@@ -26,4 +26,4 @@ case "$layout" in
         ;;
 esac
 
-notify-send -a layout_switcher "$code"
+notify-send -r 9994 -a layout_switcher "$code"
