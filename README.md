@@ -21,3 +21,8 @@ rm ~/.zshrc
 cp ~/Hyprland-Dracula-Mint/Dracula-Mint/.zshrc ~/
 chsh -s /usr/bin/zsh
 ```
+
+### Fish
+```
+chsh -s /usr/bin/fish
+```
