@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Устанавливаем все программы
-sudo pacman -S wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty neovim firefox pavucontrol pamixer nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako dunst ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome xarchiver hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fuse2 wl-clipboard mc udiskie vlc mpv unzip flatpak fastfetch zenity gsimplecal flameshot --noconfirm
+sudo pacman -S wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty neovim firefox pavucontrol pamixer nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako dunst ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome xarchiver hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fuse2 wl-clipboard mc udiskie vlc mpv unzip flatpak fastfetch zenity gsimplecal flameshot steam qbittorrent blender --noconfirm
 
 #Создание папки .config и .themes
 mkdir -p ~/.config
@@ -46,6 +46,8 @@ cd ~/yay
 makepkg -si
 yay -S bibata-cursor-theme-bin
 yay -S vscodium-bin
+yay -S viber
+yay -S elyprismlauncher-bin
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/rofi/network-manager.sh
