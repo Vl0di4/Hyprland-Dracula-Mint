@@ -93,7 +93,7 @@
     },
 
     "hyprland/window": {
-        "format": "{class}"
+        "format": "{initialTitle}: {class}"
     },
 
     "keyboard-state": {
