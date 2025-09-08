@@ -1,4 +1,5 @@
 # Hyprland-Dracula-Mint
+### Discord
 
 ```
 curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
@@ -9,6 +10,7 @@ betterdiscordctl install
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
 ```
 
+### ZSH
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
