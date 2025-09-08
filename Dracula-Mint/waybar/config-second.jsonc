@@ -34,12 +34,12 @@
     },
 
     "custom/calendar": {
-        "on-click": "kitty -e calcurse",
+        "on-click": "alacritty -e calcurse",
         "format": "󰃭"
     },
 
     "custom/btop": {
-        "on-click": "kitty -e btop",
+        "on-click": "alacritty -e btop",
         "format": ""
     },
 
