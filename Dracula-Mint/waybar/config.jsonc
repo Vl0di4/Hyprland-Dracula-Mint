@@ -222,7 +222,7 @@
         "format-icons": {
             "default": ["", "", ""]
         },
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click": "bash -c 'pgrep -x pavucontrol >/dev/null && pkill -x pavucontrol || pavucontrol &'",
         "scroll-step": 5.0,
         "max-volume": 150
     },
