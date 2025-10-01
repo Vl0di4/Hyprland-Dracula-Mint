@@ -217,7 +217,8 @@
         "format-icons": {
             "default": ["", "", ""]
         },
-        "on-click": "bash -c 'pgrep -x pavucontrol >/dev/null && pkill -x pavucontrol || pavucontrol &'",
+        // "on-click": "bash -c 'pgrep -x pavucontrol >/dev/null && pkill -x pavucontrol || pavucontrol &'",
+        "on-click": "bash -c 'pgrep -x pwvucontrol >/dev/null && pkill -x pwvucontrol || com.saivert.pwvucontrol &'",
         "scroll-step": 5.0,
         "max-volume": 150
     },
