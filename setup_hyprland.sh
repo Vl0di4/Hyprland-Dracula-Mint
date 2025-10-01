@@ -52,6 +52,7 @@ yay -S bibata-cursor-theme-bin
 yay -S vscodium-bin
 yay -S viber
 yay -S elyprismlauncher-bin
+yay -S swayosd
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/rofi/network-manager.sh
