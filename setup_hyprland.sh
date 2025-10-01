@@ -37,9 +37,9 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/n
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/n0eij4j3.default-release/
 
 #Добавление GTK темы
-tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/Dracula-mint-GTK.tar.gz
+tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/Nordic-darker-standard-buttons.tar.gz
 tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/assets.tar.gz
-cp -rf Dracula-mint-GTK ~/.themes/
+cp -rf Nordic-darker-standard-buttons ~/.themes/
 cp -rf assets ~/.config/
 
 #Установка yay и нужных программ + тема курсора
