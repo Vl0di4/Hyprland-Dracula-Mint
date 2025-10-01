@@ -26,6 +26,8 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/gsimplecal ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/flameshot ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/fish ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/alacritty ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qBittorrent ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qbittorrent ~/.config/
 
 # переносим настройки курсора
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
