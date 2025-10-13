@@ -22,6 +22,7 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/mako ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/dunst ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/fastfetch ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/VSCodium ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.vscode-oss ~/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/gsimplecal ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/flameshot ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/fish ~/.config/
