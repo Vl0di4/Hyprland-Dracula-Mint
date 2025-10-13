@@ -10,4 +10,5 @@
 
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
 }
