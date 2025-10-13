@@ -9,4 +9,5 @@
     "editor.cursorBlinking": "solid",
 
     "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Atom One Dark",
 }
