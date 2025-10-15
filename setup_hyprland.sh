@@ -54,6 +54,7 @@ yay -S vscodium-bin
 yay -S viber
 yay -S elyprismlauncher-bin
 yay -S swayosd
+yay -S sublime-text-4
 
 # Настраиваем права на выполнение
 chmod +x ~/.config/rofi/network-manager.sh
