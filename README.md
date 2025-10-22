@@ -41,11 +41,29 @@
 
 <!-- INSTALLATION -->
 ## :blue_book: Installation
+
+### Installing Hyprland
 ```
 git clone https://github.com/Vl0di4/Hyprland-Dracula-Mint
 cd Hyprland-Dracula-Mint
 chmod +x setup_hyprland.sh
 bash setup_hyprland.sh
+```
+
+### Installing Fish (recommended)
+```
+chsh -s /usr/bin/fish
+```
+
+### Installing ZSH
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+rm ~/.zshrc
+cp ~/Hyprland-Dracula-Mint/Dracula-Mint/.zshrc ~/
+chsh -s /usr/bin/zsh
 ```
 
 #
