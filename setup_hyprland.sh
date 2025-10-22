@@ -67,6 +67,7 @@ chmod +x ~/.config/dunst/changevolume
 flatpak install flathub com.saivert.pwvucontrol
 flatpak install flathub com.github.wwmm.easyeffects
 flatpak install flathub org.vinegarhq.Sober
+flatpak install flathub com.github.PintaProject.Pinta
 
 sudo flatpak override --filesystem=$HOME/.config/gtk-3.0/
 sudo flatpak override --filesystem=$HOME/.config/gtk-4.0/
@@ -74,3 +75,4 @@ sudo flatpak override --filesystem=$HOME/.themes/
 
 flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.saivert.pwvucontrol
 flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.wwmm.easyeffects
+flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.PintaProject.Pinta
