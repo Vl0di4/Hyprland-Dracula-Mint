@@ -61,6 +61,7 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/fish ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/alacritty ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qBittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qbittorrent ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
 
 # Add GTK theme
