@@ -63,6 +63,7 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qBittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qbittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/update_discord.sh ~/
 
 # Add GTK theme
 tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/Nordic-darker-standard-buttons.tar.gz
@@ -77,6 +78,7 @@ chmod +x ~/.config/hypr/show_layout_popup.sh
 chmod +x ~/.config/hypr/hyprpicker.sh
 chmod +x ~/.config/dunst/dunstrc
 chmod +x ~/.config/dunst/changevolume
+chmod +x ~/update_discord.sh
 
 # Other Settings
 gsettings set org.gnome.desktop.interface gtk-theme Nordic-darker-standard-buttons
