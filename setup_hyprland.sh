@@ -20,6 +20,29 @@ flatpak install flathub com.github.wwmm.easyeffects
 flatpak install flathub org.vinegarhq.Sober
 flatpak install flathub com.github.PintaProject.Pinta
 
+# Setup Flatpak programs
+sudo flatpak override --filesystem=$HOME/.config/gtk-3.0/
+sudo flatpak override --filesystem=$HOME/.config/gtk-4.0/
+sudo flatpak override --filesystem=$HOME/.themes/
+
+flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.saivert.pwvucontrol
+flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.wwmm.easyeffects
+flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.PintaProject.Pinta
+
+# Setup Firefox
+mkdir -p ~/.mozilla/firefox/n0eij4j3.default-release
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/profiles.ini ~/.mozilla/firefox/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/n0eij4j3.default-release/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/n0eij4j3.default-release/
+
+# Setup Discord
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
+curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
+chmod +x betterdiscordctl
+sudo mv betterdiscordctl /usr/local/bin
+sudo betterdiscordctl self-upgrade
+betterdiscordctl install
+
 # Creating some directories
 mkdir -p ~/.config
 mkdir -p ~/.themes
@@ -48,12 +71,6 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qBittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qbittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
 
-# Setup Firefox
-mkdir -p ~/.mozilla/firefox/n0eij4j3.default-release
-cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/profiles.ini ~/.mozilla/firefox/
-cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/n0eij4j3.default-release/
-cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/n0eij4j3.default-release/
-
 # Add GTK theme
 tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/Nordic-darker-standard-buttons.tar.gz
 tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/assets.tar.gz
@@ -67,15 +84,6 @@ chmod +x ~/.config/hypr/show_layout_popup.sh
 chmod +x ~/.config/hypr/hyprpicker.sh
 chmod +x ~/.config/dunst/dunstrc
 chmod +x ~/.config/dunst/changevolume
-
-# Setup Flatpak programs
-sudo flatpak override --filesystem=$HOME/.config/gtk-3.0/
-sudo flatpak override --filesystem=$HOME/.config/gtk-4.0/
-sudo flatpak override --filesystem=$HOME/.themes/
-
-flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.saivert.pwvucontrol
-flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.wwmm.easyeffects
-flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.PintaProject.Pinta
 
 # Other Settings
 gsettings set org.gnome.desktop.interface gtk-theme Nordic-darker-standard-buttons
