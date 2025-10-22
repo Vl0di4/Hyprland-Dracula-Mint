@@ -35,14 +35,6 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/profiles.ini ~/.mozilla/fire
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/user.js ~/.mozilla/firefox/n0eij4j3.default-release/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/firefox/chrome ~/.mozilla/firefox/n0eij4j3.default-release/
 
-# Setup Discord
-cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
-curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
-chmod +x betterdiscordctl
-sudo mv betterdiscordctl /usr/local/bin
-sudo betterdiscordctl self-upgrade
-betterdiscordctl install
-
 # Creating some directories
 mkdir -p ~/.config
 mkdir -p ~/.themes
