@@ -42,6 +42,8 @@
 <!-- INSTALLATION -->
 ## :blue_book: Installation
 
+### *Please activate "Multilib" before installation*
+
 ### Installing Hyprland
 ```
 git clone https://github.com/Vl0di4/Hyprland-Dracula-Mint
