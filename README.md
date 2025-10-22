@@ -1,6 +1,9 @@
 # Hyprland-Dracula-Mint
-### Discord
 
+<img width="1920" height="1079" alt="image" src="https://github.com/user-attachments/assets/c2e1efac-bf55-49f6-928d-c1c2d0c4d8bb" />
+
+
+### Discord
 ```
 curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
 chmod +x betterdiscordctl
