@@ -60,7 +60,7 @@ chsh -s /usr/bin/fish
 ### Installing Telegram Theme (recommended)
 [Install Theme](https://t.me/addtheme/DraculaMint)
 
-### Installing BetterDiscord
+### Installing BetterDiscord (recommended)
 ```
 curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
 chmod +x betterdiscordctl
