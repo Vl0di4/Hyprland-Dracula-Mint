@@ -55,6 +55,11 @@ bash setup_hyprland.sh
 chsh -s /usr/bin/fish
 ```
 
+### Installing Telegram Theme (recommended)
+[Install Theme](https://t.me/addtheme/DraculaMint)
+
+
+
 ### Installing ZSH
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
