@@ -2,8 +2,8 @@ general.import = ["~/.config/alacritty/dracula.toml"]
 
 [window]
 blur = true
-padding = { x = 25, y = 30 }
-dynamic_padding = true
+padding = { x = 25, y = 29 }
+dynamic_padding = false
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "bold" }
