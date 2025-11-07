@@ -1,9 +1,6 @@
 #!/bin/bash
-#sleep 0.1
 
-# Закрыть все уведомления (только если у тебя dunst)
-# dunstctl close-all
-
+# Получаем текущую раскладку
 layouts=$(hyprctl devices | grep "active keymap" | awk -F': ' '{print $2}')
 layout=$(echo "$layouts" | grep -v "English (US)" | head -n 1)
 
@@ -26,4 +23,30 @@ case "$layout" in
         ;;
 esac
 
-notify-send -r 9994 -a layout_switcher "$code"
+# Закрываем предыдущее окно (если есть)
+pkill -f "yad --text=.*layout_osd" 2>/dev/null
+
+# Показываем OSD с текущей раскладкой
+yad --text="<span font='JetBrainsMono Nerd Bold 36' foreground='#ffffff'>$code</span>" \
+    --no-buttons \
+    --undecorated \
+    --skip-taskbar \
+    --on-top \
+    --center \
+    --borders=20 \
+    --title="layout_osd" \
+    --fixed \
+    --justify=center \
+    --align=center \
+    --text-align=center \
+    --geometry=300x75 \
+    --window-icon=none &
+
+# Сохраняем PID окна YAD
+YAD_PID=$!
+
+# Внешний таймер (например, 1.5 секунды)
+sleep 0.75
+
+# Закрываем окно после таймера
+kill "$YAD_PID" 2>/dev/null
