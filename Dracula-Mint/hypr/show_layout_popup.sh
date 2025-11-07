@@ -23,11 +23,8 @@ case "$layout" in
         ;;
 esac
 
-# Закрываем предыдущее окно (если есть)
-pkill -f "yad --text=.*layout_osd" 2>/dev/null
-
-# Показываем OSD с текущей раскладкой
-yad --text="<span font='JetBrainsMono Nerd Bold 36' foreground='#ffffff'>$code</span>" \
+# Показываем новое окно (не убивая старое)
+yad --text="<span font='JetBrainsMono Nerd Bold 24' foreground='#ffffff'>$code</span>" \
     --no-buttons \
     --undecorated \
     --skip-taskbar \
@@ -39,14 +36,18 @@ yad --text="<span font='JetBrainsMono Nerd Bold 36' foreground='#ffffff'>$code</
     --justify=center \
     --align=center \
     --text-align=center \
-    --geometry=300x75 \
+    --geometry=300x50 \
     --window-icon=none &
 
-# Сохраняем PID окна YAD
-YAD_PID=$!
+# Сохраняем PID нового окна
+NEW_YAD_PID=$!
 
-# Внешний таймер (например, 1.5 секунды)
-sleep 0.75
+# Дадим окну время открыться (чтобы не моргало)
+sleep 0.1
 
-# Закрываем окно после таймера
-kill "$YAD_PID" 2>/dev/null
+# Теперь закрываем старое окно (если есть)
+pkill -f "yad --text=.*layout_osd" --older 2>/dev/null
+
+# Ждём немного и закрываем текущее окно
+sleep 1
+kill "$NEW_YAD_PID" 2>/dev/null
