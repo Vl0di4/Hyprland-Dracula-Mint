@@ -6,7 +6,7 @@ cd ~/yay
 makepkg -si
 
 # Install Programs
-sudo pacman -Sy wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty alacritty neovim firefox pavucontrol pamixer nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako dunst ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome xarchiver hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fish fuse2 wl-clipboard mc udiskie vlc mpv unzip flatpak fastfetch zenity gsimplecal flameshot steam qbittorrent blender mission-center chromium wine winetricks yad --noconfirm
+sudo pacman -Sy wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty alacritty neovim firefox pavucontrol pamixer nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako dunst ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome xarchiver hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fish fuse2 wl-clipboard mc udiskie vlc mpv unzip flatpak fastfetch zenity gsimplecal flameshot steam qbittorrent blender mission-center chromium wine winetricks yad qt5ct qt6ct --noconfirm
 
 yay -S bibata-cursor-theme-bin
 yay -S vscodium-bin
@@ -62,8 +62,9 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/alacritty ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qBittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qbittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt5ct ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt6ct ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
-cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/update_discord.sh ~/
 
 # Add GTK theme
 tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/Nordic-darker-standard-buttons.tar.gz
@@ -78,7 +79,6 @@ chmod +x ~/.config/hypr/show_layout_popup.sh
 chmod +x ~/.config/hypr/hyprpicker.sh
 chmod +x ~/.config/dunst/dunstrc
 chmod +x ~/.config/dunst/changevolume
-chmod +x ~/update_discord.sh
 
 # Other Settings
 gsettings set org.gnome.desktop.interface gtk-theme Nordic-darker-standard-buttons
