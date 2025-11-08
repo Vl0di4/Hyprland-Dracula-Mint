@@ -18,7 +18,6 @@ yay -S sublime-text-4
 flatpak install flathub com.saivert.pwvucontrol
 flatpak install flathub com.github.wwmm.easyeffects
 flatpak install flathub org.vinegarhq.Sober
-flatpak install flathub com.github.PintaProject.Pinta
 
 # Setup Flatpak programs
 sudo flatpak override --filesystem=$HOME/.config/gtk-3.0/
@@ -27,7 +26,6 @@ sudo flatpak override --filesystem=$HOME/.themes/
 
 flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.saivert.pwvucontrol
 flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.wwmm.easyeffects
-flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.PintaProject.Pinta
 
 # Setup Firefox
 mkdir -p ~/.mozilla/firefox/n0eij4j3.default-release
@@ -59,8 +57,6 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/gsimplecal ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/flameshot ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/fish ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/alacritty ~/.config/
-cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qBittorrent ~/.config/
-cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qbittorrent ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt5ct ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt6ct ~/.config/
