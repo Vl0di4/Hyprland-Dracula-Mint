@@ -73,8 +73,6 @@ chmod +x ~/.config/rofi/network-manager.sh
 chmod +x ~/.config/rofi/rofi-power-menu.sh
 chmod +x ~/.config/hypr/show_layout_popup.sh
 chmod +x ~/.config/hypr/hyprpicker.sh
-chmod +x ~/.config/dunst/dunstrc
-chmod +x ~/.config/dunst/changevolume
 
 # Other Settings
 gsettings set org.gnome.desktop.interface gtk-theme Nordic-darker-standard-buttons
