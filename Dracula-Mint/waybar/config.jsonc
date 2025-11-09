@@ -23,14 +23,13 @@
         "hyprland/language",
         "custom/calc",
         "custom/btop",
-        "custom/calendar",
         "clock",
         "custom/network",
         "custom/power"
     ],
 
     "custom/calc": {
-        "on-click": "rofi -show calc -modi calc -no-show-match -no-sort -calc-command \"echo -n '{result}' | xclip\" -theme ~/.config/rofi/launchers/type-7/style-2.rasi -show drun",
+        "on-click": "rofi -show calc -modi calc -no-show-match -no-sort -calc-command \"echo -n '{result}'\" -theme ~/.config/rofi/launchers/type-2/style-1-calc.rasi -show drun",
         "format": ""
     },
 
@@ -59,7 +58,7 @@
     },
 
     "custom/arch-rofi": {
-        "on-click": "rofi -show drun -theme ~/.config/rofi/launchers/type-7/style-2.rasi",
+        "on-click": "rofi -show drun -theme ~/.config/rofi/launchers/type-2/style-1.rasi",
         "format": " 󰣇 "
     },
 
@@ -223,7 +222,7 @@
             "default": ["", "", ""]
         },
         // "on-click": "bash -c 'pgrep -x pavucontrol >/dev/null && pkill -x pavucontrol || pavucontrol &'",
-        "on-click": "bash -c 'pgrep -x pwvucontrol >/dev/null && pkill -x pwvucontrol || flatpak run com.saivert.pwvucontrol &'",
+	    "on-click": "bash -c 'pgrep -x pwvucontrol >/dev/null && pkill -x pwvucontrol || com.saivert.pwvucontrol &'",
         "scroll-step": 5.0,
         "max-volume": 150
     },
