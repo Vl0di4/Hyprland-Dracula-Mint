@@ -14,6 +14,7 @@ yay -S viber
 yay -S elyprismlauncher-bin
 yay -S swayosd
 yay -S sublime-text-4
+yay -S adwsteamgtk
 
 flatpak install flathub com.saivert.pwvucontrol
 flatpak install flathub com.github.wwmm.easyeffects
@@ -60,6 +61,7 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/alacritty ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt5ct ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt6ct ~/.config/
+cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/AdwSteamGtk ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
 
 # Add GTK theme
