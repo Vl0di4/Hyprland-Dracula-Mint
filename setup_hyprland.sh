@@ -6,7 +6,7 @@ cd ~/yay
 makepkg -si
 
 # Install Programs
-sudo pacman -Sy wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty alacritty neovim firefox pavucontrol pamixer nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome file-roller hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fish fuse2 wl-clipboard mc udiskie vlc mpv unzip flatpak fastfetch zenity gsimplecal flameshot steam qbittorrent blender mission-center chromium wine winetricks yad qt5ct qt6ct kolourpaint --noconfirm
+sudo pacman -Sy wayland xorg xorg-server xorg-xwayland hyprland xdg-desktop-portal-hyprland kitty alacritty neovim firefox pavucontrol pamixer nemo grim slurp swappy rofi rofi-calc rofi-emoji waybar mako ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-firacode-nerd noto-fonts-emoji otf-font-awesome file-roller hyprpicker btop calcurse telegram-desktop discord wlsunset geoclue2 python3 swayimg swaybg nodejs npm eza zsh fish fuse2 wl-clipboard mc udiskie vlc mpv unzip flatpak fastfetch zenity gsimplecal flameshot steam qbittorrent blender mission-center chromium wine winetricks yad qt5ct qt5 qt5-graphicaleffects qt5-quickcontrols2 qt5-svg qt6ct kolourpaint sddm --noconfirm
 
 yay -S bibata-cursor-theme-bin
 yay -S vscodium-bin
@@ -62,7 +62,11 @@ cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/BetterDiscord ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt5ct ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/qt6ct ~/.config/
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/AdwSteamGtk ~/.config/
+
 cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/.icons ~/
+
+sudo cp -rf ~/Hyprland-Dracula-Mint/Dracula-Mint/sugar-dark /usr/share/sddm/themes/
+sudo cp ~/Hyprland-Dracula-Mint/Dracula-Mint/sddm.conf /etc/
 
 # Add GTK theme
 tar -xf ~/Hyprland-Dracula-Mint/Dracula-Mint/Nordic-darker-standard-buttons.tar.gz
