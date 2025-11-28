@@ -15,18 +15,7 @@ yay -S elyprismlauncher-bin
 yay -S swayosd
 yay -S sublime-text-4
 yay -S adwsteamgtk
-
-flatpak install flathub com.saivert.pwvucontrol
-flatpak install flathub com.github.wwmm.easyeffects
-flatpak install flathub org.vinegarhq.Sober
-
-# Setup Flatpak programs
-sudo flatpak override --filesystem=$HOME/.config/gtk-3.0/
-sudo flatpak override --filesystem=$HOME/.config/gtk-4.0/
-sudo flatpak override --filesystem=$HOME/.themes/
-
-flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.saivert.pwvucontrol
-flatpak override --user --env=GTK_THEME=Nordic-darker-standard-buttons com.github.wwmm.easyeffects
+yay -S pwvucontrol
 
 # Setup Firefox
 mkdir -p ~/.mozilla/firefox/n0eij4j3.default-release
